@@ -10,6 +10,8 @@ RUN apt-get update -y
 
 RUN apt-get install -y systemd
 
+COPY files/entry-script.bash /entry-script.bash
+
 RUN useradd -s /bin/bash client
 
 USER client

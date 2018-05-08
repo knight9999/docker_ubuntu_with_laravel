@@ -7,10 +7,10 @@ chmod a+w /var/db/mysql
 
 cp -rpn /var/lib/mysql/* /var/db/mysql/
 
-mkdir -p /var/mt/etc
-chmod a+w /var/mt/etc
+mkdir -p /mnt/etc
+chmod a+w /mnt/etc
 
-cp -rpf /var/mt/etc/* /etc/
+cp -rpf /mnt/etc/* /etc/
 
 service rsyslog start
 service apache2 start

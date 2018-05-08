@@ -10,8 +10,10 @@ $ docker build -t ubuntu_with_laravel . --no-cache=true
 
 ## コンテナの起動(Mac)
 
+ワークディレクトリの下で以下を実行
+
 ```
-$ docker run --privileged -d --name python_server -v `pwd`/work:/mnt/work/ -it ubuntu_with_python
+$ docker run --privileged -d --name python_server -v `pwd`/../project:/home/client/work/project -v `pwd`/../etc:/mnt/etc -it ubuntu_with_python
 ```
 
 
